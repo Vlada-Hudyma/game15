@@ -1,3 +1,5 @@
+/* eslint-disable */
+window.onload = function(){
 var modal = document.getElementById('myModal');
 var btn = document.getElementById('enter');
 var name = document.getElementById('nameModal');
@@ -5,11 +7,13 @@ var mumberClick = document.getElementById('data-numbers');
 var information = document.getElementById('information');
 var chipItem = document.getElementsByClassName('.chip')
     
-btn.onclick = function () {
-    modal.style.display = "none";
-    
-    document.getElementById('data-name').innerHTML = document.forms['idform'].elements['nameModal'].value;
-}
+
+
+    btn.onclick = function () {
+        modal.style.display = "none";
+        document.getElementById('data-name').innerHTML = document.forms['idform'].elements['nameModal'].value;
+    }
+
 
 
 class Board {
@@ -183,8 +187,6 @@ class Chip {
     }
 }
 
-
-
 const board = new Board({
     boardSelector: '.board'
 });
@@ -193,3 +195,4 @@ console.log(board);
 
 
 
+}
