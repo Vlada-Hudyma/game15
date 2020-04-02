@@ -51,11 +51,18 @@ font-family: "futura-demic-reg", Arial, sans-serif;
   position: relative;
   background: #acacac;
   border-radius: 2%;
+  @media(max-width:576px) {
+    width: 100%;
+    padding-top: 100%;
+  }
 }
 .game h1 {
   color: #dfd6c5;
   font-size: 5em;
   text-align: center;
+  @media(max-width:576px) {
+    font-size: 3em;
+  }
 }
 .chip {
   box-sizing: border-box;
@@ -100,12 +107,20 @@ font-family: "futura-demic-reg", Arial, sans-serif;
 .boardWrap {
   display: flex;
   justify-content: space-around;
+  @media(max-width:576px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .data {
   box-sizing: border-box;
   width: 40%;
   padding: 0;
+  @media(max-width:576px) {
+    width: 100%;
+    padding: 20px;
+  }
 }
 
 .modal {
@@ -125,11 +140,16 @@ font-family: "futura-demic-reg", Arial, sans-serif;
 
 .modal-content {
   margin: 15% auto;
-  border: 1px solid gray;
   width: 50%;
   height: 5%;
   border: none;
   text-align: center;
+  @media(max-width:576px) {
+    margin: 0% auto;
+    width: 82%;
+    height: 10%;
+    display: flex;
+  }
 }
 ::placeholder {
   color: white;
@@ -146,6 +166,10 @@ font-family: "futura-demic-reg", Arial, sans-serif;
   font-size: 1.5em;
   outline: none;
   padding-left: 10px;
+  @media(max-width:576px) {
+    width: 131%;
+    height: 55px;
+  }
 }
 #enter {
   width: 50px;
@@ -158,6 +182,9 @@ font-family: "futura-demic-reg", Arial, sans-serif;
   font-size: 1.5em;
   font-weight: bold;
   outline: none;
+  @media(max-width:576px) {
+    height: 58px;
+  }
 }
 
 .youName {
